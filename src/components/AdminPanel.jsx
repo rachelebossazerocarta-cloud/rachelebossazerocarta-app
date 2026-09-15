@@ -663,6 +663,16 @@ export default function AdminPanel({ onClose }) {
                   <span>Nuovo Cliente</span>
                 </button>
 
+                {/* Aggiorna Rubrica */}
+                <button
+                  onClick={() => window.location.reload()}
+                  className="flex items-center gap-1.5 bg-sky-700 hover:bg-sky-600 text-white px-3.5 py-2 rounded-xl text-xs font-bold transition shadow-md cursor-pointer"
+                  title="Aggiorna la pagina per vedere gli ultimi iscritti"
+                >
+                  <RefreshCw className="w-4 h-4" />
+                  <span>Aggiorna</span>
+                </button>
+
                 {/* PULSANTE MANUALE CANCELLA RUBRICA */}
                 <button
                   onClick={handleClearRubrica}
